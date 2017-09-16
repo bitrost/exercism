@@ -4,5 +4,8 @@
 
 void hello(char *buffer, const char *name)
 {
-  printf("");
+  if (name == NULL) {
+    name = "World";
+  }
+  sprintf(buffer, "Hello, %s!", name);
 }
